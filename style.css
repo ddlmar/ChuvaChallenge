@@ -1,5 +1,5 @@
 * {
-  margin: 0 auto;
+  margin: 0 ;
   padding: 0;
   box-sizing: border-box;
   font-family: "roboto";
@@ -8,12 +8,13 @@
   color: #725c5c;
 }
 .mainContainer {
-  display: grid;
+  display: flex;
   grid-template-columns: 220px 1146px;
 }
 
+
 .navContainer {
-  width: 220px;
+  height: 100%;
   box-shadow: 1px 1px 5px #d3d3d3;
 }
 .LOGO {
@@ -44,9 +45,9 @@
 }
 
 .headerContainer {
-  display: grid;
+  display: flex;
   height: 68px;
-  width: 100%;
+  width: 1146px;
   background-color: #fdf1eb;
   grid-template-columns: repeat(3, auto);
   justify-content: start;
@@ -67,12 +68,14 @@
   margin-left: 110px;
   margin-right: 22px;
   padding: 8px 9px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+.languageContainer {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3, auto);
   gap: 3px;
-  border: 1px solid #cccccc;
-  border-radius: 3px;
 }
 
 .loginBox {
@@ -93,6 +96,27 @@
 }
 
 .contentContainer {
-  width: 100%;
   margin-left: 36px;
+}
+
+.contentBoxLeft {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 783px;
+  grid-template-rows: repeat(2, auto);
+}
+
+.contentBoxLeft h1 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #ED7839;
+}
+.contentBoxLeft .teste{
+  position: absolute;
+  width: 783px;
+  height: 439px;
+  background:  linear-gradient(170deg, #ad6813 200%,  #96481c 50%  );
+   opacity: .3;
+  
+  
 }
