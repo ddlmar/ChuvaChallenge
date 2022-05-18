@@ -1,0 +1,98 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 400;
+  color: #725c5c;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 220px 1146px;
+}
+
+.navContainer {
+  width: 220px;
+  box-shadow: 1px 1px 5px #d3d3d3;
+}
+.LOGO {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 68px;
+  background: linear-gradient(170deg, #ffb354, #ee7a3a);
+}
+.LOGO p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+.navList {
+  list-style: none;
+  text-align: left;
+  font-size: 15px;
+}
+.navList ul {
+  padding: 7px 0 7px 24px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.navList ul:checked + ul {
+  background: #000;
+}
+
+.headerContainer {
+  display: grid;
+  height: 68px;
+  width: 100%;
+  background-color: #fdf1eb;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  align-items: center;
+}
+.titleBox {
+  margin-left: 36px;
+}
+.titleBox h1 {
+  padding-top: 2px;
+}
+.titleBox p {
+  font-size: 22px;
+  padding: 1px 0;
+}
+
+.languageBox {
+  margin-left: 110px;
+  margin-right: 22px;
+  padding: 8px 9px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  gap: 3px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.loginBox {
+  text-align: end;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, auto);
+}
+
+.loginBox .email {
+  font-size: 12px;
+}
+.loginBox img {
+  margin-left: 5px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.contentContainer {
+  width: 100%;
+  margin-left: 36px;
+}
