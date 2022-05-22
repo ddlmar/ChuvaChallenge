@@ -8,72 +8,79 @@
     <title>Slaca</title>
 </head>
 <body>
-    <div class="mainContainer">
-        <div class="leftContainer"> <!-- container para posicionar elementos da esquerda-->    
-            <nav class="navContainer">
+    <div class="main-container">
+        <div class="left-container"> <!-- container para posicionar elementos da esquerda-->    
+            <nav class="nav-container">
                 <div class="LOGO">
                     <p>SLACA 2019</p>
                 </div>
                 <img src="assets/nav_image.svg" alt="logo do site">
-                <li class="navList">
-                    <ul>Apresentação</ul>
-                    <ul>Comitês</ul>
-                    <ul>Autores</ul>
-                    <ul>Eixos temáticos</ul>
-                    <ul>Trabalhos</ul>
-                    <ul>Contato</ul>
-                </li>       
+                <ul class="nav-list" id="menu">
+                    <li class="menu-option">Apresentação</li>
+                    <li class="menu-option">Comitês</li>
+                    <li class="menu-option">Autores</li>
+                    <li class="menu-option">Eixos temáticos</li>
+                    <li class="menu-option">Trabalhos</li>
+                    <li class="menu-option">Contato</li>
+                </ul>       
             </nav>
         </div>
-        <div class="rightContainer"> <!-- container para posicionar elementos da direita-->
-            <header class="headerContainer">
-                <div class="titleBox">
+        <div class="right-container"> <!-- container para posicionar elementos da direita-->
+            <header class="header-container">
+                <div class="title-box">
                     <h1>Anais do Simpósio Latino Americano de Ciências de Alimentos </h1>
-                    <p>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </p>
+                    <p class="content">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </p>
                     <span>ISSN: 1234-5678</span>
                 </div>
-                <div class="languageBox">
-                    <div class="languageContainer">
-                        <img src="assets/language image.svg" alt="imagem referente a escolha de linguagem da pagina">
-                        <p>PT, BR</p>
-                        <img src="assets/dropdown.svg" alt="seta indicando a troca de liguagem"> 
-                    </div>
+                <div class="language-container">                    
+                    <img src="assets/language image.svg" alt="imagem referente a escolha de linguagem da pagina">
+                    <p>PT, BR</p>
+                    <img src="assets/dropdown.svg" alt="seta indicando a troca de liguagem">                     
                 </div>
-                <div class="loginBox">
+                <div class="login-box">
                     <div>
                         <p>Bem vindo!</p>
                         <p class="email">alguem12@galoascience.com</p>
                     </div>
-                    <img src="assets/login.svg" alt="foto do usuario logado">
+                    <div class="photo-box">
+                        <div class="notification">
+                            2
+                        </div>
+                        <img src="assets/login.svg" class="user-photo" alt="foto do usuario logado">
+                    </div>
                 </div>
             </header>
-            <main class="contentContainer">
-                <div class="contentBoxLeft">
+            <main class="content-container">
+                <div class="content-box-left">
                     <h1>
                         Análise sensorial de preparações funcionais
                          desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP 
-                    </h1>
-                    <div class="videoBox">
-                        <div class="bgVideo">
-                            
-                        </div>
-                        <div class="video-box-content">
-                            <p>Análise sensorial de preparações funcionais 
+                    </h1>                   
+                    <div class="video-box-content">
+                        <div>
+                            <p class="video-main-title">Análise sensorial de preparações funcionais 
                                 desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP 
-                            </p>
+                            </p>    
                         </div>
-                    </div>
+                        <div class="photo-container">
+                            <img src="assets/photovideo.svg" alt="">
+                            <div>
+                                <p class="photo-title">Beatriz Christiane Melo</p>
+                                <p class="photo-subtitle">FCA / Universidade Estadual de Campinas</p>
+                            </div>
+                        </div>
+                    </div>                   
                 </div>
-                <div class="contentBoxRight">
-                    <div class="buttonBox">
-                        <div class="downloadBtn">
+                <div class="content-box-right">
+                    <div class="button-box">
+                        <div class="download-btn">
                             <img src="assets/download.svg" alt="botão para baixar">
                             <p>Download</p>
                         </div>
-                        <div class="favBtn">
+                        <div class="fav-btn">
                             <img src="assets/estrela.svg" alt="botão de favorito">
                         </div>
-                        <div class="doiBtn">
+                        <div class="doi-btn">
                             <img src="assets/doi.svg" alt="icone doi">
                         </div>
                     </div>
@@ -83,23 +90,36 @@
                             <p>Detalhes</p>
                         </div>
                         <div class="details">
-                            <p>
-                                Tipo de Apresentação: Pôster
-                                Eixo temático: Alimentação e saúde (AS) 
-                                Palavras-chaves: Alimentos funcionais, alimentação escolar.
-
-                                Autores:
-                                Galileo Galilei¹
-                                Berta Lange de Morretes²
-                                Isaac Newton³
-                                Cesar Lattes¹
-                                Stephen Hawking⁴
-
-                                ¹Universidade Estadual de Campinas
-                                ²Universidade de São Paulo
-                                ³Instituto Nacional de Pesquisas Espaciais
-                                ⁴Universidade Federal do Rio de Janeiro
-                            </p>
+                            <div class="phrase-box">
+                                <p>
+                                    Tipo de Apresentação:  <b>Pôster</b>    
+                                </p>
+                                <p>
+                                    Eixo temático: <b>Alimentação e saúde (AS)</b>   
+                                </p>
+                                <p>
+                                    Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b> 
+                                </p>
+                                <p>
+                                    <div>
+                                        <b>Autores:</b>
+                                        <p>
+                                            Galileo Galilei¹ <br>
+                                            Berta Lange de Morretes² <br>
+                                            Isaac Newton³ <br>
+                                            Cesar Lattes¹ <br>
+                                            Stephen Hawking⁴
+                                            
+                                        </p>
+                                    </div>
+                                </p>
+                                <p class="phrase-opacity">
+                                    ¹Universidade Estadual de Campinas
+                                    ²Universidade de São Paulo
+                                    ³Instituto Nacional de Pesquisas Espaciais
+                                    ⁴Universidade Federal do Rio de Janeiro
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,7 +137,7 @@
                             <p>Discussões</p>
                         </div>
                         <div class="topic-box">
-                            <div>
+                            <div class="topic-container">
                                 <p class="topic-title">Compartilhe suas ideias ou dúvidas com os autores!</p>
                                 <div class="topic-img">
                                     <img src="assets/icone1.svg" alt="">
@@ -128,6 +148,50 @@
                                     Sabia que o maior estímulo no desenvolvimento científico e 
                                     cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
                                 </p>
+                                <div class="add-topic-box">
+                                    <div class="separator"></div>
+                                    <div class="topic-btn">
+                                        <img src="assets/cruz.svg" alt="">
+                                        <span class="button-label">criar tópico</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submit-box hidden">
+                                <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                                <div class="subject-box">
+                                    <p class="subject-title">Assunto</p>
+                                    <div>
+                                        <form action="">
+                                            <input class="subject-area"  type="text" name="" placeholder="Defina um tópico sucinto para notificar os autores...">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="submit-content-box">
+                                    <p class="submit-content-title">Conteúdo</p>
+                                    <div>
+                                        <form action="">
+                                            <input class="content-area" type="text" name="" id="">
+                                        </form>
+                                    </div>
+                                    <div class="content-complement">
+                                        <div class="text-style">
+                                            <button class="bold-style">B</button>
+                                            <button class="italic-style">I</button>                 
+                                        </div>
+                                        <div class="submit-button">Enviar</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="send-box hidden">
+                                <p class="send-title">Seu tópico foi enviado com sucesso! :D</p>
+                                <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                                <p class="send-link">Descubra outros trabalhos!</p>
+                                <div class="send-btn-box">
+                                    <div class="separator"></div>
+                                    <span class="send-btn">
+                                        criar novo tópico
+                                    </span> 
+                                </div>   
                             </div>
                             <div class="email-box">
                                 <p class="email-title">Assunto da pergunta aparece aqui</p>
@@ -166,11 +230,10 @@
                 </div>
             </main>
             <footer class="footer-box">
-
                 <img src="assets/imagem - footer.svg" alt="">
             </footer>
         </div>
     </div>
-    
+    <script src="js/app.js"></script>
 </body>
 </html>
