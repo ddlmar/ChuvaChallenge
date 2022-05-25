@@ -14,13 +14,11 @@ b {
 
 .main-container {
   display: flex;
+  width: 100%;
 }
 
-
-
-
 .right-container {
-  width: 100%;
+ width: 100%;
 }
 
 .nav-container {
@@ -59,7 +57,9 @@ b {
 }
 
 .header-container {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   padding: 4px 32px;
   height: 68px;  
   background-color: #fdf1eb;
@@ -127,6 +127,10 @@ b {
   grid-template-columns: 783px auto;
   padding: 20px 32px 0 32px;
   column-gap: 30px;
+}
+
+.content-box-left{
+  width: 100%;
 }
 
 .content-box-left h1 {
@@ -684,3 +688,108 @@ b {
   animation-iteration-count: infinite;
 }
 
+@media screen and (max-width: 992px) {
+  .header-container{
+    display: flex;
+    gap: 25px;
+  }
+  .right-container{
+    width: 788px;
+  }
+  .header-container{
+    display: grid;
+    height: 138px;
+    grid-template-columns: 300px 150px 200px;
+  }
+  .language-container{
+    margin: 0;
+  }
+  .content-container{
+    grid-template-columns: 438px 270px;
+   
+  }
+  .video-box-content{
+    width: 438px;
+  }
+  .resume-box{
+    width: 708px;
+  }
+  .talk-box{
+    width: 708px;
+  }
+  .footer-box img{
+    width: 772px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-container{
+    width: 200px;
+  }
+  
+  .right-container{
+    width: 584px;
+  }
+
+  .header-container{
+    height: 80px;
+    grid-template-columns: 200px 108px 220px;
+    gap: 0;
+  }
+
+
+  .nav-container img{
+    width: 200px;
+  }
+
+  .title-box h1{
+    font-size: 10px;
+  }
+  .content{
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .content-container{
+    
+    grid-template-columns: 276px 260px;
+    column-gap: 0;
+  }
+
+  .video-box-content{
+    width: 276px;
+  }
+
+  .video-main-title{
+    font-size: 20px;
+  }
+
+  .photo-title{
+    font-size: 20px;
+  }
+
+  .photo-subtitle{
+    font-size: 20px;
+  }
+
+  .resume-box{
+    width: 536px;
+  }
+  .talk-box{
+    width: 536px;
+  }
+  .footer-box img{
+    width: 568px;
+  }
+  .topic-more{
+    width: 400px;
+  }
+
+  .resume-text-complete p{
+    font-size: 10px;
+  }
+  .resume-text {
+    font-size: 10px;
+
+  }
+}
