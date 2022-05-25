@@ -1,6 +1,6 @@
 <h1 align='center'>Chuva Challenge</h1> 
 
-<p align="center">This project is made for a seletive proccess in Chuva inc.</p>
+<p align="center">This project is made for a selective proccess in Chuva inc.</p>
 
 ## How to Build
 
